@@ -1,0 +1,122 @@
+App.js
+
+
+// function App() {
+
+  //we can dynamically use variables
+  //we use curly braces in the component( App ) for dynammic variables
+ 
+// const title = 'Welcome to the new blog';
+// const likes = 50;
+
+//we cannot dynamically use boolean and objects
+// const person = { name: 'snk', age: 30 };
+
+//we can use dynamic value for link in a tag 
+// const link = "http://www.google.com";
+
+//   return (
+//     <div className="App">
+//       <div className="content">
+//         <h1>{ title }</h1>
+//         <p>Liked { likes } times</p>
+
+//         {/* we use curly braces to return values on page */}
+//         <p>{ 10 }</p>
+//         <p>{ "hello snk" }</p>
+//         <p>{ [1,2,3,4,5] }</p>
+//         <p>{ Math.random() * 10 }</p>
+
+//         {/* we can use dynamic value for link in a tag using curly braces */}
+//         <a href={ link }>Google Site</a>
+
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+//we always need to export so that in can be imported in other files.
+//inside the App it is jsx not html which is similar to html which is converted to html at the browser
+//use camelcase
+
+
+
+
+//component name always starts with capital letter
+
+
+//react is javascript library for creating single page websites
+
+//components :-
+
+//App.js  ->  root component  , that gets render to the dom ( that the index file renders)
+// all others components are nested inside the App.js component like Navbar.js, BlogDetail.js Sidebar.js etc
+//again Sidebar.js can be nested into more components
+
+
+
+
+
+
+home.js
+
+
+// const Home = () => {
+
+  // e = event object for all info related to the event
+  // const handleClick = (e) => (
+  //   console.log('hello snk', e)
+  // )
+
+
+
+
+  // let name = 'snk';
+  //use of usestate allows us to change the the name rectively on the webpage
+  //setName is used to change the value of the name
+
+  // const [name, setName] = useState('snk'); //'snk' is the initial value
+  // const [age, setAge] = useState(25);
+
+  //setName can be updated in the function for onclick 
+  // const handleClick = () => {
+  //   setName('shriniket'); // updating the name = snk to name = shriniket
+  //   setAge(100);
+  // }
+
+
+
+  // const handleClickAgain = (name, e) => (
+  //     console.log('hello ' + name, e.target)
+  // )
+
+  // return (
+  //   <div className="home">
+  //       <h2>Homepage</h2>
+
+        {/* after we click the (click me) the value changes from snk to shriniket */}
+        // <p>{ name } is {age} years old</p>
+
+
+        {/* do not use parenthesis in function as it will call as soon as we save it, so just type the name it will call it on click */}
+        // <button onClick={ handleClick }>click me</button>
+
+
+
+        {/* to pass a value in function we use arrow function */}
+        {/* <button onClick={ (e) => handleClickAgain('mario', e) }>click me again</button> */}
+    // </div>
+//   )
+// }
+
+// export default Home
+
+
+// usestate is a hook gives us a way to use a reactive value and change the value whenever we want
+
+
+
+
+//for creating a json run the command on different terminal
+npx json-server --watch data/db.json --port 8000
